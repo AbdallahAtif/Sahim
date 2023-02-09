@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
               primarySwatch: Colors.blue,
             ),
             onGenerateRoute: appRouter.generateRoute,
-            initialRoute: appLayoutScreen,
+            initialRoute: cameraScreen,
           );
         });
   }
