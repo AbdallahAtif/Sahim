@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sahem/default_button.dart';
 import 'package:sahem/default_text_form_field.dart';
+import 'package:sahem/report_screen.dart';
 import 'package:sahem/route/route_path.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -83,7 +84,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 child: DefaultButton(
                     onPrised: () {
-                      Navigator.pushNamed(context, loginScreen);
+                      Navigator.pushNamed(context, reportScreen);
                     },
                     childText: 'تسجيل الدخول'),
               ),

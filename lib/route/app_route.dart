@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sahem/app_layout.dart';
 import 'package:sahem/login_screen.dart';
+import 'package:sahem/report_screen.dart';
 import 'package:sahem/route/route_path.dart';
 import 'package:sahem/welcome_screen.dart';
 
@@ -15,6 +17,15 @@ class AppRouter {
          case loginScreen:
         return MaterialPageRoute(
           builder: (_) => const LoginScreen(),
+        );
+
+         case reportScreen:
+        return MaterialPageRoute(
+          builder: (_) => const ReportScreen(),
+        );
+        case appLayoutScreen:
+        return MaterialPageRoute(
+          builder: (_) =>  AppLayout(),
         );
     }
     return null;

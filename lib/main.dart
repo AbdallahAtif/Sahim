@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:sahem/route/app_route.dart';
 import 'package:sahem/route/route_path.dart';
 
@@ -26,11 +27,19 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Sahem',
+            
             theme: ThemeData(
+              bottomNavigationBarTheme: BottomNavigationBarThemeData(
+                backgroundColor: Colors.amber,
+                selectedItemColor: HexColor('279FD2'),
+                unselectedItemColor: Colors.grey,
+                unselectedLabelStyle: TextStyle(color: Colors.grey)
+
+              ),
               primarySwatch: Colors.blue,
             ),
             onGenerateRoute: appRouter.generateRoute,
-            initialRoute: welcomeScreen,
+            initialRoute: appLayoutScreen,
           );
         });
   }
